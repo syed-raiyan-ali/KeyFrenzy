@@ -1,0 +1,207 @@
+body {
+    background-color: rgb(53, 47, 68);
+    overflow: hidden;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer, Edge */
+}
+
+.outer{
+    /* border: 1px red solid; */
+    margin-top:1.5%;
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+
+.container {
+    height: 100vh;
+    /* border: 1px blue solid; */
+    width: 75%;
+    margin: 0 auto;
+}
+
+.container h1{
+    background-color: rgb(92, 84, 112);
+    color: rgb(250, 240, 230);
+    padding: 2px;
+    height: 240px;
+    margin: 0 0 10px 0;
+    color: black;
+    text-align: center;
+    overflow-y: auto;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer, Edge */
+}
+
+.container h1::-webkit-scrollbar { 
+    display: none; /* Chrome, Safari, Opera */
+}
+
+.form-group textarea{
+    resize: none;
+    color: black;
+    padding: 10px 0;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer, Edge */
+    background-color: rgb(185, 180, 199);
+    height: 300px;
+    width: 100%;
+}
+
+.form-group textarea::-webkit-scrollbar { 
+    display: none; /* Chrome, Safari, Opera */
+}
+
+#nav button{
+    width: 100%;
+    text-align: left;
+    background-color: transparent;
+    border: 1px solid rgb(53, 47, 68);
+    cursor: pointer;
+    font-size: 20px;
+    line-height: 250%;
+    padding-left: 15px;
+}
+
+#nav{
+    /* border: 1px red solid; */
+    background-color: rgb(92, 84, 112);
+    height: 100%;
+    overflow-y: auto;
+    width: 22%;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer, Edge */
+}
+
+nav::-webkit-scrollbar { 
+    display: none; /* Chrome, Safari, Opera */
+}
+
+/*------------------- mobile------------------  */
+
+@media(max-width:425px){
+    #h1{
+        height: 30vh;
+    }
+
+    .form-group textarea{
+        height: 58vh;
+        font-size: 12px;
+    }
+
+    #nav{
+        height: 95vh;
+    }
+
+    #nav button{
+        font-size: 10px;
+        line-height: 180%;
+        padding-left: 5px;
+    }
+}
+
+/* ---------------------------- tablet ----------------------- */
+
+@media(min-width:426px) and (max-width:768px){
+    #h1{
+        height: 35vh !important;
+    }
+
+    .form-group textarea{
+        height: 53vh !important;
+        font-size: 15px;
+    }
+
+    #nav{
+        height: 95vh !important;
+    }
+
+    #nav button{
+        font-size: 15px !important;
+        line-height: 23 0% !important;
+        padding-left: 5px !important;
+    }
+}
+
+/* --------------------------laptop---------------------------- */
+
+@media(min-width:769px) and (max-width:1024px){
+    #h1{
+        height: 42vh;
+    }
+
+    .form-group textarea{
+        height: 48vh;
+        font-size: 20px;
+    }
+
+    #nav{
+        height: 95vh;
+    }
+
+    #nav button{
+        font-size: 20px;
+        line-height: 220%;
+        padding-left: 5px;
+    }
+}
+
+/* ------------------------------- L laptop --------------------------------- */
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+    #h1 {
+        font-size: 60px;
+        height: 42vh;
+    }
+
+    #h1 span{
+        font-size: 30px !important;
+    }
+    
+    .form-group textarea {
+      height: 48vh;
+      font-size: 25px;
+    }
+  
+    #nav {
+      height: 95vh;
+    }
+  
+    #nav button {
+      font-size: 20px;
+      line-height: 270%;
+      padding-left: 5px;
+    }
+}
+
+/* ------------------------------------------- 4k------------------------- */
+
+@media (min-width: 1441px) and (max-width: 2560px) {
+    #h1 {
+        font-size: 80px;
+        height: 42vh;
+    }
+
+    #h1 span{
+        font-size: 40px !important;
+    }
+  
+    .form-group textarea {
+      font-size: 45px;
+      height: 48vh;
+    }
+  
+    #nav {
+      height: 95vh;
+    }
+  
+    #nav button {
+      font-size: 45px;
+      line-height: 450%;
+      padding-left: 15px;
+    }
+  }
