@@ -1,4 +1,6 @@
 body {
+    font-family: "Delius", cursive;
+    font-style: normal;
     background-color: rgb(53, 47, 68);
     overflow: hidden;
     scrollbar-width: none; /* Firefox */
